@@ -35,10 +35,10 @@ app.post("/", function (req, res) {
 
 	let jsonData = JSON.stringify(data);
 
-	const url = "https://us17.api.mailchimp.com/3.0/lists/bdb773d862";
+	const url = "https://us17.api.m";
 	const options = {
 		method: "POST",
-		auth: "Ayush:bdf079c9a71d3c0407953f54e564f3b5-us17",
+		auth: "",
 	};
 
 	const request = https.request(url, options, function (response) {
@@ -69,5 +69,3 @@ app.listen(process.env.PORT || 3000, function () {
 	console.log("Server 3000");
 });
 
-// Api Key = bdf079c9a71d3c0407953f54e564f3b5-us17
-// audience id bdb773d862
